@@ -28,17 +28,18 @@
   font-size: 0.7rem;
 }
 
-.highlight-box {
+.announcement-highlight-box {
   background: #FCE9E7;
   border-left: 6px solid #ed7366;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
 
-.highlight-box p {
-  margin-bottom: 0.25rem;
-  margin-top: 0.25rem;
+.announcement-highlight-box p {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .chunk-box {
@@ -50,6 +51,46 @@
   margin-bottom: 1rem;
   margin-top: 1rem;
   color: #595f75;
+}
+
+.image-double-container {
+  display: flex;
+  gap: 5px;
+  width: 75%;
+}
+
+.image-double-container img {
+  height: auto;
+  object-fit: cover;
+}
+
+.indented-emphasis-box {
+  margin-left: 0.5rem;
+  border-left: 3px solid #515354;
+  padding-left: 1rem;
+}
+
+.quote-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  
+  background: #e5f2fc;
+  border-left: 6px solid #668fed;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.quote-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.quote-emoji {
+  font-size: 1.3rem;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 .card-grid {
