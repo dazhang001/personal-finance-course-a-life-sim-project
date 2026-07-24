@@ -54,14 +54,25 @@
 }
 
 .image-double-container {
-  display: flex;
-  gap: 5px;
-  width: 75%;
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
 }
 
 .image-double-container img {
-  height: auto;
-  object-fit: cover;
+    height: clamp(150px, 30vw, 200px);
+    width: 75%;
+}
+
+@media (max-width: 768px) {
+    .image-double-container {
+        flex-direction: column;
+    }
+
+    .image-double-container img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .indented-emphasis-box {
@@ -79,7 +90,7 @@
   border-left: 6px solid #668fed;
   padding: 16px;
   border-radius: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .quote-text {
